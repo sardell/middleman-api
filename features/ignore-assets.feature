@@ -6,17 +6,7 @@ Feature: Ignore Assets
     """
     <h1>File Not Found</h1>
     """
-    And I go to "/javascripts/module.xml"
-    Then I should see:
-    """
-    <h1>File Not Found</h1>
-    """
     And I go to "/stylesheet/module.json"
-    Then I should see:
-    """
-    <h1>File Not Found</h1>
-    """
-    And I go to "/stylesheet/module.xml"
     Then I should see:
     """
     <h1>File Not Found</h1>

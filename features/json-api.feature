@@ -28,7 +28,7 @@ Feature: JSON API
     """
 
   Scenario: built files
-    Given a built app at "middleman-app" with flags "--verbose --clean"
+    Given a successfully built app at "middleman-app" with flags "--verbose"
     When I cd to "build"
     Then the following files should exist:
       | index.html |
